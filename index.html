@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHPE MDC Hialeah - Society of Hispanic Professional Engineers</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.10/main.min.css' rel='stylesheet' />
+    <link href='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.10/main.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.10/main.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.10/main.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@6.1.10/main.min.js'></script>
+    <script src="events.js"></script>
+
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">SHPE MDC Hialeah</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/events.html">Events</a></li>
+                <li><a href="pages/officers.html">Officers</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/join.html" class="join-btn">Join SHPE</a></li>
+                <li><a href="pages/login.html" class="login-btn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Society of Hispanic Professional Engineers</h1>
+            <h2>MDC Hialeah Chapter</h2>
+            <p>Empowering Hispanic students to realize their fullest potential in STEM</p>
+            <div class="hero-buttons">
+                <a href="pages/join.html" class="cta-button">Join SHPE</a>
+                <a href="#upcoming-events" class="secondary-button">Upcoming Events</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Meeting Times -->
+<section id="meeting-times" class="meeting-times">
+    <div class="section-container">
+        <h2>Meeting Schedule</h2>
+        <div class="meeting-grid">
+            <div class="meeting-card">
+                <h3>Weekly Research Meetings</h3>
+                <p>Tuesday @ 3:00 PM - 5:00 PM</p>
+                <p>Kendall Robotics Lab or Hialeah Campus</p>
+            </div>
+            <a href="https://zoom.us/j/4327173102?from=join#success" target="_blank" class="meeting-card">
+                <h3>Monthly Information Session</h3>
+                <p>15th of Every Month</p>
+                <p>6:00 PM - 7:00 PM via Zoom</p>
+            </a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+    <!-- Why Join Section -->
+    <section id="why-join" class="why-join">
+        <div class="section-container">
+            <h2>Why Join SHPE?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Hands-On Experience</h3>
+                    <p>Get practical knowledge in programming and engineering through real projects</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Networking</h3>
+                    <p>Connect with peers and professionals in the STEM field</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Resume Building</h3>
+                    <p>Work on funded research projects that employers love to see</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Events & Workshops</h3>
+                    <p>Participate in conventions, hackathons, and professional development workshops</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Projects Preview -->
+    <section id="projects-preview" class="projects-preview">
+        <div class="section-container">
+            <h2>Current Research Projects</h2>
+            <div class="projects-grid">
+                <!-- Project cards will be dynamically loaded via JavaScript -->
+            </div>
+            <a href="pages/projects.html" class="view-all-button">View All Projects</a>
+        </div>
+    </section>
+
+    <!-- Join Process -->
+    <section id="join-process" class="join-process">
+        <div class="section-container">
+            <h2>How to Join</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Register on SharkNet</h3>
+                    <p>Request membership through MDC's SharkNet platform</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>SHPE National Membership</h3>
+                    <p>Join SHPE.org and select Region 7 MDC ($10 yearly fee)</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Complete Registration</h3>
+                    <p>Fill out our membership form and join our communication channels</p>
+                </div>
+            </div>
+            <a href="pages/join.html" class="start-now-button">Start Now</a>
+        </div>
+    </section>
+    <!-- Join Process section ends -->
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: shpehialeahmdc@shpehialeahmdc.org</p>
+                <p>Website: www.shpe.org</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://sharknet.mdc.edu/organization/shpe">SharkNet</a></li>
+                    <li><a href="https://shpe.org">SHPE National</a></li>
+                    <li><a href="pages/join.html">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/shpehialeahmdc" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.gg/3nje2hr6" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://chat.whatsapp.com/JlMBKvMsyFwLQx04FIlT16" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SHPE MDC Hialeah. All rights reserved.</p>
+        </div>
+
+        
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/events.js"></script>
+
+
+</body>
+</html>

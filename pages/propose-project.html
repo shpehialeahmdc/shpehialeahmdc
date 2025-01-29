@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propose a Project - SHPE MDC Hialeah</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Same navigation as other pages -->
+    </nav>
+
+    <main class="propose-project-page">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Propose a New Project</h1>
+                <p>Share your innovative ideas with the SHPE MDC community</p>
+            </div>
+        </section>
+
+        <section class="proposal-form-section">
+            <div class="container">
+                <form id="projectProposalForm" class="proposal-form">
+                    <div class="form-group">
+                        <label for="projectTitle">Project Title*</label>
+                        <input type="text" id="projectTitle" name="projectTitle" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectCategory">Project Category*</label>
+                        <select id="projectCategory" name="projectCategory" required>
+                            <option value="">Select a category</option>
+                            <option value="robotics">Robotics</option>
+                            <option value="software">Software Development</option>
+                            <option value="mechanical">Mechanical Engineering</option>
+                            <option value="electrical">Electrical Engineering</option>
+                            <option value="community">Community Outreach</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectDescription">Project Description*</label>
+                        <textarea id="projectDescription" name="projectDescription" rows="6" required 
+                            placeholder="Provide a detailed description of your project idea..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectObjectives">Project Objectives*</label>
+                        <textarea id="projectObjectives" name="projectObjectives" rows="4" required
+                            placeholder="List the main objectives and goals of your project..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preliminaryResearch">Preliminary Research</label>
+                        <textarea id="preliminaryResearch" name="preliminaryResearch" rows="6"
+                            placeholder="Share any initial research, similar projects, or background information..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requiredResources">Required Resources*</label>
+                        <textarea id="requiredResources" name="requiredResources" rows="4" required
+                            placeholder="List the resources, materials, or equipment needed..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="teamSize">Estimated Team Size*</label>
+                        <select id="teamSize" name="teamSize" required>
+                            <option value="">Select team size</option>
+                            <option value="2-3">2-3 members</option>
+                            <option value="4-5">4-5 members</option>
+                            <option value="6-8">6-8 members</option>
+                            <option value="8+">8+ members</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">Estimated Timeline*</label>
+                        <select id="timeline" name="timeline" required>
+                            <option value="">Select timeline</option>
+                            <option value="1-2">1-2 months</option>
+                            <option value="3-4">3-4 months</option>
+                            <option value="5-6">5-6 months</option>
+                            <option value="6+">6+ months</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="supervisingOfficer">Preferred Supervising Officer</label>
+                        <select id="supervisingOfficer" name="supervisingOfficer">
+                            <option value="">Select an officer (optional)</option>
+                            <!-- Officers will be populated dynamically -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalInfo">Additional Information</label>
+                        <textarea id="additionalInfo" name="additionalInfo" rows="4"
+                            placeholder="Any additional information or special requirements..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="attachments">Attachments (optional)</label>
+                        <input type="file" id="attachments" name="attachments" multiple
+                            accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx">
+                        <small>Max file size: 10MB. Accepted formats: PDF, DOC, DOCX, PPT, PPTX, XLS, XLSX</small>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Proposal</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="proposal-guidelines">
+            <div class="container">
+                <h2>Proposal Guidelines</h2>
+                <div class="guidelines-grid">
+                    <div class="guideline-item">
+                        <h3>1. Project Scope</h3>
+                        <p>Clear definition of project goals, objectives, and deliverables</p>
+                    </div>
+                    <div class="guideline-item">
+                        <h3>2. Feasibility</h3>
+                        <p>Realistic timeline and resource requirements</p>
+                    </div>
+                    <div class="guideline-item">
+                        <h3>3. Impact</h3>
+                        <p>Benefits to members and the community</p>
+                    </div>
+                    <div class="guideline-item">
+                        <h3>4. Innovation</h3>
+                        <p>Creative and original ideas that advance STEM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Same footer as other pages -->
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/proposal.js"></script>
+</body>
+</html>

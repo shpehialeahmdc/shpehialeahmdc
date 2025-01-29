@@ -1,0 +1,116 @@
+/* Responsive CSS - goes in css/responsive.css */
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        padding: 0 20px;
+    }
+    
+    .hero-content {
+        padding: 60px 20px;
+    }
+    
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .event-card, .project-card {
+        margin: 10px;
+    }
+    
+    .officer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .nav-links.active {
+        display: block;
+    }
+    
+    .nav-links li {
+        display: block;
+        margin: 15px 0;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .officer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-details {
+        flex-direction: column;
+    }
+    
+    .event-info, .event-registration {
+        width: 100%;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links {
+        margin-top: 20px;
+    }
+  }
+  
+  /* Small Mobile Styles */
+  @media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .auth-box {
+        padding: 1.5rem;
+    }
+    
+    .event-card, .project-card {
+        margin: 10px 0;
+    }
+  }
+  
+  /* Print Styles */
+  @media print {
+    .navbar, .footer, .auth-buttons {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+    
+    .content {
+        margin: 0;
+        padding: 0;
+    }
+  }
