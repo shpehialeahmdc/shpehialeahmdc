@@ -6,12 +6,16 @@
     <title>Join SHPE MDC Hialeah</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/auth.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
+                <img src="../images/shpe-logo.png" alt="SHPE MDC Hialeah Logo" class="nav-logo">
                 <a href="../index.html">SHPE MDC Hialeah</a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
@@ -26,6 +30,7 @@
                 <li><a href="officers.html">Officers</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="join.html" class="active join-btn">Join SHPE</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -37,7 +42,7 @@
                 <p>Begin your journey with the Society of Hispanic Professional Engineers</p>
             </div>
         </section>
-
+    
         <section class="membership-benefits">
             <div class="container">
                 <h2>Member Benefits</h2>
@@ -65,99 +70,89 @@
                 </div>
             </div>
         </section>
-
-        <section class="membership-process">
-            <div class="container">
-                <h2>How to Join</h2>
-                <div class="process-steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <h3>Register on SharkNet</h3>
-                        <p>Create an account on MDC's SharkNet platform.</p>
-                        <a href="https://sharknet.mdc.edu/" class="step-link" target="_blank">Visit SharkNet</a>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <h3>Join SHPE National</h3>
-                        <p>Become a member of SHPE National organization.</p>
-                        <a href="https://www.shpe.org/students/join" class="step-link" target="_blank">SHPE National Registration</a>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <h3>Complete Chapter Registration</h3>
-                        <p>Fill out our chapter membership form below.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="membership-form">
-            <div class="container">
-                <h2>Membership Registration</h2>
-                <form id="joinForm" class="join-form">
+    
+        <section class="auth-container">
+            <div class="auth-box">
+                <h2>Create Account</h2>
+                <p>Join SHPE MDC Hialeah Chapter</p>
+                
+                <form id="registerForm" class="auth-form active">
                     <div class="form-group">
                         <label for="fullName">Full Name</label>
                         <input type="text" id="fullName" name="fullName" required>
                     </div>
-                    <div class="form-group">
-                        <label for="mdcEmail">MDC Email</label>
-                        <input type="email" id="mdcEmail" name="mdcEmail" required pattern=".*@mdc\.edu$">
-                    </div>
+                    
                     <div class="form-group">
                         <label for="studentId">MDC Student ID</label>
                         <input type="text" id="studentId" name="studentId" required>
                     </div>
+                    
                     <div class="form-group">
-                        <label for="major">Major</label>
-                        <select id="major" name="major" required>
-                            <option value="">Select your major</option>
-                            <option value="computer-science">Computer Science</option>
-                            <option value="engineering">Engineering</option>
-                            <option value="mathematics">Mathematics</option>
-                            <option value="other">Other STEM Field</option>
-                        </select>
+                        <label for="mdcEmail">MDC Email</label>
+                        <input type="email" id="mdcEmail" name="mdcEmail" required pattern=".*@mymdc\.net$">
+                        <small class="input-hint">Use your @mymdc.net email</small>
                     </div>
+                    
                     <div class="form-group">
-                        <label for="graduationDate">Expected Graduation Date</label>
-                        <input type="month" id="graduationDate" name="graduationDate" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <small class="input-hint">Minimum 8 characters, include numbers and special characters</small>
                     </div>
+                    
                     <div class="form-group">
-                        <label for="shpeId">SHPE National ID (if available)</label>
-                        <input type="text" id="shpeId" name="shpeId">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
                     </div>
-                    <div class="form-group">
-                        <label>Areas of Interest (select all that apply)</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" name="interests" value="leadership"> Leadership</label>
-                            <label><input type="checkbox" name="interests" value="mentoring"> Mentoring</label>
-                            <label><input type="checkbox" name="interests" value="outreach"> Community Outreach</label>
-                            <label><input type="checkbox" name="interests" value="professional"> Professional Development</label>
-                        </div>
+    
+                    <div class="auth-requirements">
+                        <p>Annual membership fee: $10</p>
+                        <p>Payment will be collected at our next meeting</p>
                     </div>
-                    <button type="submit" class="submit-btn">Submit Application</button>
+                    
+                    <button type="submit" class="auth-button">Create Account</button>
                 </form>
             </div>
         </section>
-
+    
         <section class="faq-section">
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
                 <div class="faq-grid">
                     <div class="faq-item">
-                        <h3>What is the membership fee?</h3>
-                        <p>SHPE National membership fee is $30 for students. Chapter dues are waived for the first semester.</p>
+                        <div class="faq-question">
+                            <h3>What is the membership fee?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>SHPE membership fee is $10 per year for students. This fee helps support chapter activities and events throughout the year.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3>Who can join?</h3>
-                        <p>Any MDC student in STEM fields can join, regardless of ethnicity or background.</p>
+                        <div class="faq-question">
+                            <h3>Who can join?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Any MDC student in STEM fields can join, regardless of ethnicity or background. We welcome diversity and encourage all interested students to participate.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3>What is the time commitment?</h3>
-                        <p>We recommend attending at least two events per month to get the most out of your membership.</p>
+                        <div class="faq-question">
+                            <h3>What is the time commitment?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We recommend attending at least two events per month to get the most out of your membership. Events include workshops, networking sessions, and project meetings.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3>How can I get involved?</h3>
-                        <p>After joining, you can participate in projects, attend events, and apply for leadership positions.</p>
+                        <div class="faq-question">
+                            <h3>How can I get involved?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>After joining, you can participate in projects, attend events, and apply for leadership positions. We offer various committees and roles to match your interests and skills.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,17 +169,23 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="https://www.shpe.org/">SHPE National</a></li>
-                    <li><a href="https://sharknet.mdc.edu/organization/shpe">SharkNet</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="https://www.shpe.org/" class="footer-link">SHPE National</a></li>
+                    <li><a href="https://sharknet.mdc.edu/organization/shpe" class="footer-link">SharkNet</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-social">
                 <h4>Connect With Us</h4>
                 <div class="social-links">
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/shpehialeahmdc" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://discord.gg/3nje2hr6" target="_blank" class="social-link">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://chat.whatsapp.com/JlMBKvMsyFwLQx04FIlT16" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -194,6 +195,7 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
     <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
 </body>
 </html>

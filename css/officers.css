@@ -53,15 +53,29 @@
 
 .officer-image {
     position: relative;
-    height: 250px;
+    height: 300px; /* Reduced from 350px */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .officer-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 30%; /* This will center the image and show more of the upper body */
 }
+
+/* Specific adjustment for VP Corporate Affairs */
+.officer-card[data-role="vp-corporate"] .officer-image {
+    height: 400px; /* Keep this height for Alex's photo */
+}
+
+.officer-card[data-role="vp-corporate"] .officer-image img {
+    object-position: center top; /* This will ensure the face is visible */
+}
+
 
 .role-badge {
     position: absolute;
@@ -184,4 +198,74 @@
         flex-direction: column;
         gap: 10px;
     }
+}
+
+/* Add to your officers.css file */
+
+/* Navigation styles */
+.login-btn {
+    background: transparent;
+    border: 2px solid #000033;
+    color: #000033;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #000033;
+    color: white;
+}
+
+/* Footer styles */
+.footer-links a {
+    color: #ffffff !important; /* Make footer links white */
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+.social-links a {
+    color: #ffffff !important; /* Make social icons white */
+    font-size: 24px;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.footer {
+    background-color: #000033;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-info h3,
+.footer-links h4,
+.footer-social h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
 }

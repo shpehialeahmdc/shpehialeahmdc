@@ -268,3 +268,91 @@ footer {
         justify-content: center;
     }
 }
+
+body {
+    padding-top: 80px; /* Adjust based on your nav height */
+    margin: 0;
+    min-height: 100vh;
+}
+
+.login-btn {
+    background-color: white !important;
+    color: var(--primary-color) !important;
+    padding: 0.5rem 1.5rem !important;
+    border-radius: 25px !important;
+    transition: all 0.3s ease !important;
+}
+
+.login-btn:hover {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--gradient-1);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.main-nav {
+    position: relative; /* Change from fixed to relative */
+    width: 100%;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+@media (max-width: 768px) {
+    body {
+        padding-top: 120px; /* Increase padding for mobile */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .main-nav a {
+        padding: 0.3rem 1rem;
+    }
+}
+/* Add at the top of your CSS file */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* Update your existing header styles */
+header {
+    width: 100%;
+    background: var(--primary-color);
+    position: relative; /* Change from fixed if it was fixed before */
+    top: 0;
+}
+
+/* Update the main content area if you have margin issues */
+main {
+    margin-top: 0; /* Remove any top margin that might be pushing content down */
+    padding-top: 1rem;
+}
+
+/* Update the projects section spacing */
+.current-projects {
+    margin-top: 1rem;
+    padding: 1rem;
+}
