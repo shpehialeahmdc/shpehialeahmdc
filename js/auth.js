@@ -273,3 +273,12 @@ document.getElementById('mdcEmail').addEventListener('input', function() {
     const isValid = email.endsWith('@mymdc.net');
     this.setCustomValidity(isValid ? '' : 'Please use your @mymdc.net email address');
 });
+
+function menuMobile() {    /* show/hide the menu */
+    let link = document.getElementById("mobile-nav-links");
+    if (link.style.display === "block") {
+        link.style.display = "none";
+    } else {
+        link.style.display = "block";
+    }
+}
