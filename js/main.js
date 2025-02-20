@@ -1,5 +1,4 @@
 // main.js - goes in js/main.js
-
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const mobileMenu = document.getElementById('mobile-menu');
@@ -140,3 +139,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.add('dark-theme');
     }
 });
+
+function menuMobile() {    /* show/hide the menu */
+    let link = document.getElementById("mobile-nav-links");
+    if (link.style.display === "block") {
+        link.style.display = "none";
+    } else {
+        link.style.display = "block";
+    }
+}
