@@ -59,7 +59,7 @@
     
     .login-btn {
         border: 2px solid var(--white);
-        color: var(--white) !important;
+        color: var(--primary-color) !important;
     }
     
 }
