@@ -20,6 +20,9 @@
     <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@6.1.10/main.min.js'></script>
     <script src="events.js"></script>
 
+    <!-- icon library to show a hamburger menu on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 <body>
@@ -45,7 +48,23 @@
                 <li><a href="pages/login.html" class="login-btn">Login</a></li>
             </ul>
         </div>
+
     </nav>
+
+    <div class="mobile-nav">
+        <div id="mobile-nav-links">
+            <a href="pages/about.html">About</a>
+            <a href="pages/events.html">Events</a>
+            <a href="pages/officers.html">Officers</a>
+            <a href="pages/projects.html">Projects</a>
+            <a href="pages/contact.html">Contact</a>
+            <a href="pages/join.html" class="join-btn">Join SHPE</a>
+            <a href="pages/login.html" class="login-btn">Login</a>
+        </div>
+        <a href="javascript:void(0)," class="icon" onclick="menuMobile()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
     
     <!-- Hero Section -->
     <section id="home" class="hero">
