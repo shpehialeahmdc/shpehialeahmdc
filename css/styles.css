@@ -1,0 +1,541 @@
+    /* For mobile devices to see the navbar */
+@media only screen and (max-width: 720px){
+    .navbar {
+        display: none;
+    }
+    .mobile-nav {   /*the nav menu*/
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        justify-content: space-between;
+    }
+    .mobile-nav #mobile-nav-links {  /*hide the links inside the menu*/
+        display: none;
+        
+    }
+    .mobile-nav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: flex;
+    }
+    .mobile-nav a.icon {
+        background-color: #333(0, 0, 0);
+        display: reverse;
+        position: flex;
+        right: 0;
+        top: 0;
+    }
+    /*.mobile-nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }*/
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+    .login-btn {
+        background-color: #dddddd00;
+        color: white;
+    }
+    .join-btn {
+        background-color: #dddddd00;
+        color: white;
+    }
+    
+}
+@media only screen and (min-width: 721px) {
+    .logo a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .join-btn {
+        background-color: var(--white);
+        color: var(--white) !important;
+    }
+    
+    .login-btn {
+        border: 2px solid var(--white);
+        color: var(--white) !important;
+    }
+    
+}
+
+/* Global Styles */
+:root {
+    --primary-color: #1a237e;
+    --secondary-color: #0d47a1;
+    --accent-color: #2196f3;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --white: #ffffff;
+    --shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*.logo a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}*/
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+    /* the phone navbar is hidden by default */
+.mobile-nav {
+    display: flex;
+}
+
+.join-btn, .login-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(26, 35, 126, 0.9), rgba(26, 35, 126, 0.9)),
+                url('../images/hero-bg.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding-top: 80px;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-button, .secondary-button {
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s;
+}
+
+.cta-button {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.secondary-button {
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+/* Meeting Times Section */
+.meeting-times {
+    padding: 5rem 0;
+    background-color: var(--light-gray);
+}
+
+.meeting-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.meeting-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+.meeting-times {
+    padding: 2rem 0;
+}
+
+.meeting-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.meeting-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.meeting-card:hover {
+    transform: translateY(-5px);
+}
+.follow-section {
+    background-color: #1a237e;  /* Dark blue background */
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.follow-section h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    color: white;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    color: #64b5f6;  /* Light blue on hover */
+}
+
+.info-session-card {
+    cursor: pointer;
+}
+
+.info-session-card:hover {
+    background-color: #f5f5f5;
+}
+
+.meeting-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.meeting-card p {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+/* Benefits Section */
+.why-join {
+    padding: 5rem 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.benefit-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Join Process Section */
+.join-process {
+    background-color: var(--light-gray);
+    padding: 5rem 0;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.info-session-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.info-session-card h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.info-session-card .date,
+.info-session-card .time {
+    color: #666;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.info-session-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.step-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: 700;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 4rem 0 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section a {
+    color: var(--white);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-section a:hover {
+    opacity: 0.8;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Event filters */
+.filter-btn {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.filter-btn.active {
+    background-color: #1a237e;
+    color: white;
+}
+
+/* RSVP and Join Zoom buttons */
+.rsvp-btn, .join-zoom-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #1a237e;
+    color: white;
+}
+
+/* Event cards */
+.event-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* Calendar container */
+#calendar {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    z-index: 1000;
+}
+
+.notification.success {
+    background-color: #4caf50;
+}
+
+.notification.error {
+    background-color: #f44336;
+}
+#calendar {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+.filter-buttons {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #1a237e;
+    color: white;
+}
+#calendar {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+.filter-buttons {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: #1a237e;
+    color: white;
+}
+
+.filter-btn:hover {
+    background-color: #3949ab;
+    color: white;
+}
