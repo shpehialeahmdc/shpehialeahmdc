@@ -527,3 +527,48 @@ body {
     background-color: #3949ab;
     color: white;
 }
+
+/* Navigation Bar Styles */
+.nav-container {
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  /* Desktop Navigation */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* Mobile Navigation */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hidden by default on mobile */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show when active */
+    }
+  
+    /* Hamburger Menu Button */
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      cursor: pointer;
+    }
+  }
+  
